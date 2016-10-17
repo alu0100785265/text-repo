@@ -1,13 +1,51 @@
 
 body{
-	background: red;
+	background:url(http://i.imgsafe.org/1caa1591c0.jpg);
 }
 
 #cabeza{
+	width:400px;
+  margin:3em auto;
+  display:block;
+  
+  box-shadow:2px 2px 15px RGBA(0,0,0, .5);
+  background:#FFF;
+
+}
+#cabeza2{
 	height: 100px;
 	width: 100px;
+	margin-left: 60em;
+	
+}
+#photo {
+  width:400px;
+  margin:auto;
+  text-align:right;
+}
+#photoo {
+  width:500px;
+  margin:auto;
+  text-align:right;
 }
 
-img{
-	height: 500px;
+
+#cssgram {
+  width:400px;
+  margin:3em auto;
+  display:block;
+  padding:20px;
+  box-shadow:2px 2px 15px RGBA(0,0,0, .5);
+  background:#FFF;
+}
+#cssgrama {
+  width:400px;
+  margin:3em auto;
+  display:block;
+  padding:10px;
+  box-shadow:2px 2px 15px RGBA(0,0,0, .5);
+  background:#FFF;
+}
+.box{
+	display: flex;
 }

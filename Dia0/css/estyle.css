@@ -24,9 +24,10 @@ body{
   text-align:right;
 }
 #photoo {
-  width:500px;
+  width:400px;
   margin:auto;
-  text-align:right;
+  
+  display: flex;
 }
 
 
@@ -45,7 +46,4 @@ body{
   padding:10px;
   box-shadow:2px 2px 15px RGBA(0,0,0, .5);
   background:#FFF;
-}
-.box{
-	display: flex;
 }

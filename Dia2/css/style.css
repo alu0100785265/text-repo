@@ -1,12 +1,10 @@
 
-.cookie-message {
-width: 400px;
-top: auto;
-left: auto;
-bottom: 0;
-right: 0;
-background: #111 url(http://i.emezeta.com/img/cookiem.png) 245px 45px no-repeat;
+.selectize-control {
+font-family: 'Open Sans';
 }
-.cookie-message p { color: #FFF }
-.cookie-message a { color: #2AF }
-
+.selectize-input .item {
+background: linear-gradient(steelblue, blue)!important;
+border: 1px solid steelblue!important;
+color: white!important;
+border-radius: 5px;
+}

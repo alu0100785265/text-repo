@@ -5,44 +5,39 @@
 	<title>Document</title>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cookieBar/0.0.1/jquery.cookieBar.js"></script>
-
-	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.1/awesomplete.min.js"></script> -->
-	
-
+	<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cookieBar/0.0.1/jquery.cookieBar.js"></script>-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.2/js/standalone/selectize.min.js"></script>
 
 	
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.cookieBar/0.0.1/cookieBar.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.1/awesomplete.min.css"> -->
+		
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.2/css/selectize.min.css"> 
 	
 	<script type="text/javascript">
-		// Opción 1: Inicializar cookieBar (genérico, en inglés)
-			$(document).ready(function() {
-			$.cookieBar();
-			});
+		$(document).ready(function() {
+		$('#input-tags').selectize({
+			plugins: ['remove_button',
+			'drag_drop',
+			'optgroup_columns'],
 
-			$(document).ready(function() {
-			$('.cookie-message').cookieBar({
-			closeButton: '.close'
-
-
-			});
-			});
-
+});
+});
 	</script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+	
 	
 </head>
 <body>
 
 
-<div class="cookie-message">
-	<p>Esta web utiliza cookies. Si sigue navegando, se entiende que acepta las
-			condiciones de uso.
-<!-- Botón de cerrar -->
-	<a class="close" href="#">Borra</a></p>
-	
-</div>
-	
+<input id="input-tags">
+
+
+
+</script>
 </body>
 </html>

@@ -6,23 +6,37 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cookieBar/0.0.1/jquery.cookieBar.js"></script>-->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.2/js/standalone/selectize.min.js"></script>
+	
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.1.2/trumbowyg.min.js"></script>
+	 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.1.2/langs/es.min.js"></script>
+			 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.3.0/ui/icons.svg"></script>
 
 	
 		
 	
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.2/css/selectize.min.css"> 
-	
-	<script type="text/javascript">
-		$(document).ready(function() {
-		$('#input-tags').selectize({
-			plugins: ['remove_button',
-			'drag_drop',
-			'optgroup_columns'],
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Trumbowyg/2.1.2/ui/trumbowyg.min.css">
 
-});
+				
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+$('.editor').trumbowyg({
+
+	svgPath: '/icons/icons.svg'
+	/*lang: 'es', // Idioma (es.min.js incluido)
+	btns: [
+	['bold', 'italic', 'underline', 'strikethrough'],
+	['superscript', 'subscript'],
+	['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+	['unorderedList', 'orderedList'],
+	['link', 'insertImage'],
+	['horizontalRule', 'removeformat'],
+	['viewHTML'],
+	['fullscreen']
+	],*/
+	});
+$('#trumbowyg').trumbowyg('html'); // Obtienes el HTML generado
+
 });
 	</script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -34,10 +48,10 @@
 <body>
 
 
-<input id="input-tags">
+<textarea class="editor"></textarea>
 
 
 
-</script>
+
 </body>
 </html>

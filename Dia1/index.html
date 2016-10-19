@@ -3,57 +3,96 @@
 <head>
 	<meta charset="UTF-8">
 	<title>HTML</title>
+	
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+	<script type="text/javascript" src="https://rawgit.com/vctrfrnndz/jquery-accordion/master/js/jquery.accordion.js"></script>
+	
+	
+	<script type="text/javascript" src="https://cdn.rawgit.com/jotform/before-after.js/master/before-after.min.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="css/estyle.css">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/jotform/before-after.js/master/before-after.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css">
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.slider').slick({
+			autoplay: true,
+			autoplaySpeed: 3000,
+			lazyLoad: 'ondemand',
+			variableWidth: true,
+			speed: 0.1,
+
+		});
+	});
+
+		$(document).ready(function() {
+		$('.ba-slider').beforeAfter();	
+	});
+		$(document).ready(function() {
+		$('.accordion').accordion({
+    "transitionSpeed": 400
+});
+		});
 	
+
+
+	</script>
 	
-	<link rel="stylesheet" href="https://cdn.rawgit.com/una/CSSgram/master/source/css/cssgram.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake-slow.min.css">
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/csshake/1.5.1/csshake-crazy.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
 	
 	
 </head>
 
 <body>
-	<h1>HTML AVANZADO</h1>
-	<div><p>Cada vez que escribo una entrada en este blog mis compañeros de estudio se burlan un poco. Dicen que sufro de incontinencia, que no manejo adecuadamente los códigos de un blog, que me extiendo demasiado. ¡Si ya lo decía mi magnífico profesor de Literatura en el colegio! “¿Los haces a peso?”, recuerdo que anotó un día —seguramente abrumado— en uno de mis muchos trabajos de comentario de texto.</p> 
-	</div>
-	<h2>Clase 1977</h2>
-	<div id="cabeza" class="_1977 ">
-		<img class="chuchu" src="img/atx.jpg" alt="Foto">
-	</div>
-	<h2>Clase Aden</h2>
-	<div id="cssgram" class="aden">
-		<img class="animated bounce" src="img/atx.jpg" alt="foto2" >
-	</div>
-	<h2>Clase reyes</h2>
-	<div id="photo" class="reyes shake-crazy  ">
-		<img  class="csshake shake" src="img/lakegeneva.jpg" alt="foto2">
-	</div>
-	<div id="photo" class="aden shake-slow shake-constant shake-constant--hover">
-		<img src="img/tahoe.jpg" alt="foto2">
-	</div>
-	<h2>foto</h2>
-	<div id="photoo" class="reyes">
-		<img src="img/cacti.jpg" alt="foto2">
-	</div>
-	<div id="photoo" class="willow">
-		<img class="csshake shake" src="img/cacti.jpg" alt="foto2">
+	<div> <h1>HTML AVANZADO</h1></div>
+	
+	<div class="slider">
+		
+		<div><img  src="https://play.google.com/books/publish/static/images/google-search.png"></div>
+		
+		<div><img src="https://pbs.twimg.com/profile_images/749870315103199232/lbi9YINi.jpg"></div>
+		
+		<div><img src="http://www.eyeprogram.org/favicon.png"></div>
+
+		
 	</div>
 
-<script type="text/javascript">
+	</br></br>
 
-	document.querySelector('.chuchu').classList.add('magictime', 'swap');
-	$('.chuchu').addClass('magictime swap');
+	<div class="ba-slider">
+  <img   src="http://www.reporteinmobiliario.com/nuke/images/crystal_lagoons_3_2011.jpg" alt="">       
+  <div class="resize">
+    <img   src="https://www.vistaalmar.es/images/stories/shark-tiburon.jpg" alt="">
+  </div>
+  <span class="handle"></span>
+</div>
+	
+</br></br>
 
-	setTimeout(function(){
-		$('.chuchu').addClass('magictime swap');
-	}, 40);
-</script>
+	<div data-accordion-group>
+    <div class="accordion" data-accordion>
+        <div data-control>Control</div>
+        <div data-content>
+            <div><h1>Acordeon</h1><div><img  src="https://play.google.com/books/publish/static/images/google-search.png"></div></div>
+            
+            
+        </div>
+    </div>
+    <div class="accordion" data-accordion>
+        <div data-control>Control</div>
+        <div data-content>
+            <div>Row</div>
+            <div>Row</div>
+            <div>Row</div>
+        </div>
+    </div>
+</div>
 
-
+	
+	
 </body>
+
 </html>

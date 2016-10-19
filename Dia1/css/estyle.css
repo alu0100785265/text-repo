@@ -1,0 +1,26 @@
+
+
+
+.slider {
+  max-width: 500px;
+  margin: auto;
+}
+
+body {
+  background: blue;
+}
+
+.ba-slider {
+  width: 400px;
+  margin: auto;
+  border: 5px solid #000;
+}
+
+.accordion  {
+  width: 600px;
+  margin: auto;
+  border: 5px solid #000;
+  background: #BAAAAA
+}
+
+

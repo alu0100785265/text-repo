@@ -16,9 +16,7 @@ height: 400px;
 stroke: red;
 
 }
-body{
-	background: #B5AAAA;
-}
+
 #diagram path {
 	fill: red;
 
@@ -30,8 +28,12 @@ body{
 	stroke: red;
 
 	}
-.polygon {
-	fill: red;
-} 	
-
+	
+table th.sort-up::after {
+content:" ";
+}
+/* Orden descendente */
+table th.sort-down::after {
+content:" ";
+}
 

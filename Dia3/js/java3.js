@@ -1,5 +1,7 @@
 
 $(document).ready(function(){
-var tabla = document.getElementById('tablesort');
+
+var tabla = document.getElementById("tablesort");
 new Tablesort(tabla);
+
 });

@@ -44,3 +44,19 @@ margin: auto;
 
 }
 
+#card > img {
+border: 15px solid #FFF;
+box-shadow: 0 0 10px RGBA(0,0,0, .5);
+}
+
+body{
+
+	background: red;
+}
+
+#photosphere {
+width: 600px;
+height: 400px;
+background: #DDD;
+}
+

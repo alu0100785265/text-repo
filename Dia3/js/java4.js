@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 $('#card').flip({
-axis: 'z',
+axis: 'x',
 // 'x' para giro en eje X
 trigger: 'click',
 // 'hover': giro sobre tarjeta

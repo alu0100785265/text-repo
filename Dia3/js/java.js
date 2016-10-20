@@ -1,8 +1,13 @@
-var data = {
-labels: ['A1', 'A2', 'A3', 'A4', 'A5', 'A6'],
-series: [{
-data: [2, 4, 6, 8, 10, 12]
-}]
-};
-var options = {}
-new Chartist.Line('.chart', data, options);
+$(document).ready(function(){
+		
+		var data = {
+series: [20, 35, 25, 25]
+}
+var options = {
+ donut: true,
+ donutWidth: 90,
+ startAngle: 270,
+ total: 100
+}
+new Chartist.Pie('.chart', data, options);
+});

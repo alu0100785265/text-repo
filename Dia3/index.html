@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.8/chartist.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.8/chartist.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script type="text/javascript">
+		
+		var data = {
+			labels: ['A1', 'A2', 'A3', 'A4', 'A5', 'A6'],
+			series: [{
+			data: [2, 4, 6, 8, 10, 12]
+			}]
+			};
+			var options = {}
+			new Chartist.Line('.chart', data, options);
+		
+	</script>
+
+
+</head>
+<body>
+	
+
+	
+
+
+<div class="chart"></div>
+
+</body>
+</html>

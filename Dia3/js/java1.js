@@ -7,4 +7,9 @@ diagram.drawSVG('diagram', {
 theme: 'hand'
 // o 'simple'
 });
+var sample = 'D-->>E: Línea \n B->D: azucar';
+var diagram1 = Diagram.parse(sample);
+diagram1.drawSVG('diagram1', {
+theme: 'simple'
+});
 });

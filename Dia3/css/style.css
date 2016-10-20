@@ -14,4 +14,24 @@ height: 400px;
 }
 .chart .ct-series.ct-series-c  {
 stroke: red;
+
 }
+body{
+	background: #B5AAAA;
+}
+#diagram path {
+	fill: red;
+
+}
+
+}
+#diagram1 rect {
+	fill: yellow;
+	stroke: red;
+
+	}
+.polygon {
+	fill: red;
+} 	
+
+
